@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>宇宙星空魅力网</title>
+			<style>
+				<!--
+				*{text-decoration: none;}/*全文设置*/
+				* {margin: 0;padding: 0;}/*全文间距设置*/
+				/*轮播--因为尝试了很多次都失败，耽误了很多时间，便从网络上摘抄了*/
+				.topImg{
+					font-size:0;padding:1px;display:block;border:1px solid #ccc;}
+				.topNav {
+					width: 100%;min-width: 1080px;background-color: #005da4;height: 32px;line-height: 32px;font-size: 14px;}
+				.topNavDiv {width: 113px;margin: 0px;text-align: center;color: #fff; float: left; font-weight:bold;}
+				.topNavDivNow{background-color:#152b3f;}
+				.topNavDiv:hover {background-color:#222; cursor: pointer;}
+				.box {
+					width: 800px;
+					height: 500px; 
+					border: 1px solid #ccc;
+					margin: 0 auto;
+					padding: 0;
+
+				}
+				.inner{
+					width: 800px;
+					height: 500px;
+					position: relative;
+					overflow: hidden;
+				}
+				.inner img{
+					width: 800px;
+					height: 500px;
+					vertical-align: top
+				}
+				ul {
+					width: 1000%;
+					position: absolute;
+					list-style: none;
+					left:0;
+					top: 0;
+				}
+				.inner li{
+					float: left;
+
+				}
+
+				ol {
+					position: absolute;
+					height: 20px;
+					right: 20px;
+					bottom: 20px;
+					text-align: center;
+					padding: 5px;
+				}
+				ol li{
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					background-color: #fff;
+					margin: 5px;
+					cursor: pointer;
+
+				}
+				ol .current{
+					background-color: red;
+				}
+				#arr{
+					display: none;
+				}
+				#arr span{
+					width: 40px;
+					height: 40px;
+					position: absolute;
+					left: 5px;
+					top: 50%;
+					margin-top: -20px;
+					background: #ff7;
+					cursor: pointer;
+					line-height: 40px;
+					text-align: center;
+					font-weight: bold;
+					font-family: '黑体';
+					font-size: 30px;
+					color: #000;
+					opacity: 0.5;
+					border: 1px solid #fff;
+				}
+				#arr #right {
+					right: 5px;
+					left: auto;}
+				/*表格设置*/
+				.trOne{font-family: "楷体";font-size: 14px;text-align: left;}
+				.trTitle{font-family: '楷体';font-size: 30px;text-align:center;}
+				-->
+			</style>
+		
+	</head>
+
+	<body>
+		<!--导航部分开始-->
+		<header>
+			<div align="center">
+				<figure class="topImg" style="background: #12B7DC">
+					<img src="images/index-png/top-homepage.jpg" alt="宇宙星空魅力-首页标题图" width="1080" height="200">
+				</figure>
+			</div>
+			<div class="topNav">
+				<div style="width:1080px; margin:0px auto;">
+					<a href="Index.html">
+					<div class="topNavDiv topNavDivNow">首页</div>
+					</a><a href="aboutUs-01/201818340419-kejizhan.html">
+					<div class="topNavDiv">科技展</div>
+					</a><a href="aboutUs-01/201818340419-xinxingxiang.html">
+					<div class="topNavDiv">新星象</div>
+					</a><a href="aboutUs-01/201818340419-xingkongshi.html">
+					<div class="topNavDiv">星空史</div>
+					</a><a href="aboutUs-01/201818340419-xingzuoquan.html">
+					<div class="topNavDiv">星座圈</div>
+					</a><a href="aboutUs-01/201818340419-wenzhailu.html">
+					<div class="topNavDiv">文摘录</div>
+					</a><a href="aboutUs-01/201818340419-xingtuyu.html">
+					<div class="topNavDiv">星图语</div></a>
+					
+						
+						<!--搜索输入区域样式设置开始-->
+					<form action="/plus/search.php" class="indexbj">
+						<input type="hidden" name="kwtype" value="0" placeholder="hinttext">
+						<input type="text" name="q" value="标题、作者、关键词" onblur="if(this.value==''){this.value='标题、作者、关键词'}" onfocus="if(this.value=='标题、作者、关键词'){this.value=''}" />
+							<datalist>
+								<option label="处女座" value="http://tools.2345.com/naonao/2020yunshi.htm#chunv">处女座</option>
+								<option label="石申" value="https://baike.so.com/doc/5705145-5917863.html">石申</option>
+							</datalist>
+					  <div style="float: right;font-size: 18px;"><p><a href="aboutUs-02/201818340419-denglu.html"><font color="#E7D497">登录</font></a>&nbsp;|&nbsp;<a href="aboutUs-02/201818340419-zhuce.html"><font color="#E7D497">注册</font></a></p></div>
+					</form>
+						<!--搜索输入区域样式设置结束-->
+				</div>
+			</div>
+		</header>
+			<!--导航部分结束-->
+		<main>
+			<!--轮播部分开始-->
+			<div class="box" id="box">
+			<div class="inner">
+				<!--轮播图-->
+				<ul>
+					<li><a href="http://www.dlkgtw.cn/product/6.html"><img src="images/index-png/keji-01.png" alt="地平坐标星球仪"></a></li>
+					<li><a href="http://www.dlkgtw.cn/product/13.html"><img src="images/index-png/keji-02.png" alt="互动星空仪"></a></li>
+					<li><a href="http://www.dlkgtw.cn/product/10.html"><img src="images/index-png/keji-03.png" alt="高度方位星座星图"></a></li>
+					<li><a href="http://www.dlkgtw.cn/product/5.html"><img src="images/index-png/keji-04.png" alt="全天光电彩色互动星图"></a></li>
+					<li><a href="http://www.dlkgtw.cn/product/31.html"><img src="images/index-png/keji-05.png" alt="流星雨演示仪"></a></li>
+				</ul>
+				<ol class="bar">
+					<a href="aboutUs-01/201818340419-kejizhan.html">科技展</a><!--修改：添加了子网页链接-->
+				</ol>
+				<!--左右焦点-->
+				<div id="arr">
+					  <span id="left"></span>
+					  <span id="right"></span>
+				</div>
+			</div>
+			</div>
+				<script>
+				/**
+				 *
+				 * @param id  传入元素的id
+				 * @returns {HTMLElement | null}  返回标签对象，方便获取元素
+				 */
+				function my$(id) {
+					return document.getElementById(id);
+				}
+
+				//获取各元素，方便操作
+				var box=my$("box");
+				var inner=box.children[0];
+				var ulObj=inner.children[0];
+				var list=ulObj.children;
+				var olObj=inner.children[1];
+				var arr=my$("arr");
+				var imgWidth=inner.offsetWidth;
+				var right=my$("right");
+				var pic=0;
+				//根据li个数，创建小按钮
+				for(var i=0;i<list.length;i++){
+					var liObj=document.createElement("li");
+
+					olObj.appendChild(liObj);
+					liObj.innerText=(i+1);
+					liObj.setAttribute("index",i);
+
+					//为按钮注册mouseover事件
+					liObj.οnmοuseοver=function () {
+						//先清除所有按钮的样式
+
+						for (var j=0;j<olObj.children.length;j++){
+							olObj.children[j].removeAttribute("class");
+						}
+						this.className="current";
+						pic=this.getAttribute("index");
+						animate(ulObj,-pic*imgWidth);
+					}
+
+				}
+
+				//设置ol中第一个li有背景颜色
+				olObj.children[0].className = "current";
+				//克隆一个ul中第一个li,加入到ul中的最后=====克隆
+				ulObj.appendChild(ulObj.children[0].cloneNode(true));
+
+				var timeId=setInterval(onmouseclickHandle,1000);
+				//左右焦点实现点击切换图片功能
+				box.οnmοuseοver=function () {
+					arr.style.display="block";
+					clearInterval(timeId);
+				};
+				box.οnmοuseοut=function () {
+					arr.style.display="none";
+					timeId=setInterval(onmouseclickHandle,1000);
+				};
+
+				right.οnclick=onmouseclickHandle;
+				function onmouseclickHandle() {
+					//如果pic的值是5,恰巧是ul中li的个数-1的值,此时页面显示第六个图片,而用户会认为这是第一个图,
+					//所以,如果用户再次点击按钮,用户应该看到第二个图片
+					if (pic == list.length - 1) {
+						//如何从第6个图,跳转到第一个图
+						pic = 0;//先设置pic=0
+						ulObj.style.left = 0 + "px";//把ul的位置还原成开始的默认位置
+					}
+					pic++;//立刻设置pic加1,那么此时用户就会看到第二个图片了
+					animate(ulObj, -pic * imgWidth);//pic从0的值加1之后,pic的值是1,然后ul移动出去一个图片
+					//如果pic==5说明,此时显示第6个图(内容是第一张图片),第一个小按钮有颜色,
+					if (pic == list.length - 1) {
+						//第五个按钮颜色干掉
+						olObj.children[olObj.children.length - 1].className = "";
+						//第一个按钮颜色设置上
+						olObj.children[0].className = "current";
+					} else {
+						//干掉所有的小按钮的背景颜色
+						for (var i = 0; i < olObj.children.length; i++) {
+							olObj.children[i].removeAttribute("class");
+						}
+						olObj.children[pic].className = "current";
+					}
+				}
+				left.οnclick=function () {
+					if (pic==0){
+						pic=list.length-1;
+						ulObj.style.left=-pic*imgWidth+"px";
+					}
+					pic--;
+					animate(ulObj,-pic*imgWidth);
+					for (var i = 0; i < olObj.children.length; i++) {
+						olObj.children[i].removeAttribute("class");
+					}
+					//当前的pic索引对应的按钮设置颜色
+					olObj.children[pic].className = "current";
+				};
+
+				//设置任意的一个元素,移动到指定的目标位置
+				function animate(element, target) {
+					clearInterval(element.timeId);
+					//定时器的id值存储到对象的一个属性中
+					element.timeId = setInterval(function () {
+						//获取元素的当前的位置,数字类型
+						var current = element.offsetLeft;
+						//每次移动的距离
+						var step = 10;
+						step = current < target ? step : -step;
+						//当前移动到位置
+						current += step;
+						if (Math.abs(current - target) > Math.abs(step)) {
+							element.style.left = current + "px";
+						} else {
+							//清理定时器
+							clearInterval(element.timeId);
+							//直接到达目标
+							element.style.left = target + "px";
+						}
+					}, 10);
+				}
+			</script></main>
+			<!--轮播部分结束-->
+			<section>
+				<!--各个结构内容开始-->
+				<div align="center">
+				<table class="trOne" border="0" bgcolor=" #5985DB">
+					<div class="trTitle"><a href="aboutUs-01/201818340419-xingzuoquan.html">星座圈</a></div>
+					<tr><td height="160px" width="160px">
+						<a href="https://www.dogstar.net/88/and/"><img src="images/index-png/xingzuoquan-02.gif" alt="仙女座" width="160" height="160"></a></td>
+						<td height="160px" width="280">
+							<h1>仙女座(Andromeda)</h1>
+							<p>传说古时埃塞俄比亚国王克甫斯和王后卡西奥珀亚生有一个美丽的公主安德洛墨达。王后常夸耀她的女儿比海王波赛东的女儿还美。这句话激怒了海王，于是海王便派鲸鱼怪到国王统治的地方，兴风作浪残害百姓。后来国王得到神的启示，为了拯救百姓，只能把公主用锁链锁在海边岩石上，以供奉鲸鱼怪。正当在这危急时刻，英雄珀尔修斯骑着飞马路过这里，救下了公主并与她结了婚。后来，公主被神提升到天上成为仙女座。</p></td>
+						<td width="160px" height="160px">
+						<a href="https://www.dogstar.net/88/boo/"><img src="images/index-png/xingzuoquan-03.gif" alt="牧夫座" width="160px" height="160px"></a></td>
+						<td height="160px" width="280px">
+							<h1>牧夫座(Bootes)</h1>
+							<p>传说天后赫拉看到化成大熊和小熊的美女卡利斯托和她的儿子阿卡斯被天神宙斯提升到天界，占据着两个荣耀宝座——大熊座和小熊座后，心中非常嫉妒。于是就叫海王永远不让大熊座和小熊座沉到地平线下去休息外，还加派了一个忠实的猎人带着两只猎犬，紧紧地在两只熊的后面追赶。这个猎人就是牧夫座。</p></td></tr>
+				</table>
+				</div>
+					&nbsp;
+				<div align="center">
+				<table class="trOne" border="0" bgcolor=" #5985DB">
+					<div class="trTitle"><a href="aboutUs-01/201818340419-xingtuyu.html">星图语</a></div>
+					<tr><td height="160px" width="160px">
+						<a href="http://www.astron.ac.cn/bencandy-22-16732-1.htm"><img src="images/index-png/xingtuyu-01.jpg" alt="郁金香星云" width="160" height="160"></a></td>
+						<td height="160px" width="280">
+							<h1>天鹅座内的郁金香星云</h1>
+							<p>这幅望远镜影像以明亮的发射星云为主题，处于天鹅座方向，沿着银道面的星场。俗称郁金香星云的红色发光气体云，在天文学家沙普利斯编制的1959星表里被编号为Sh2-101。距离约8000光年，宽约70光年，这个复杂而美丽的星云盛开在这幅合成影像的中心。来自天鹅座OB3星协边缘的，年轻高能O型星的紫外辐射为郁金香星云的辐射提供了能量。</p></td>
+						<td width="160px" height="160px">
+						<a href="http://www.astron.ac.cn/bencandy-22-16714-1.htm"><img src="images/index-png/xingtuyu-02.jpg" alt="蜘蛛星云" width="160px" height="160px"></a></td>
+						<td height="160px" width="280px">
+							<h1>红外波段的蜘蛛星云</h1>
+							<p>蜘蛛将捉住苍蝇吗？如果两者都是御夫座方向的巨大辐射云，那就不会。左面蜘蛛状的气体云实际上是编号为IC 417的辐射星云，而较小的苍蝇状的气体云被命名为NGC 1931，既是辐射星云又是反射星云。两个星云距离我们约10000光年，都拥有年轻的疏散星团，其中较为致密的NGC 1931宽约10光年。这幅照片综合了来自斯必泽空间红外望远镜和两微米全天巡天的影像。</p></td></tr>
+				</table>
+				</div>
+				&nbsp;
+				<div style="padding-left: 318px">
+				<table class="trOne" border="1" bgcolor=" #5985DB">
+					<div class="trTitle" align="left"><a href="aboutUs-01/201818340419-xinxingxiang.html">新星象</a></div>
+					<tr><td height="160px" width="160px">
+						<a href="https://www.dogstar.net/post/431/"><img src="images/index-png/xinxingxiang-01.jpeg" alt="行星撞地球" width="190" height="160"></a></td>
+						<td height="160px" width="140">
+							<h1>行星撞地球</h1>
+							<p>恐龙如何灭绝？科学家还原6500万年前陨石撞地球24小时细节</p></td>
+						<td width="160px" height="160px">
+						<a href="https://www.dogstar.net/post/404/"><img src="images/index-png/xinxingxiang-02.jpeg" alt="46P彗星来了！有望肉眼看到，视直径可能达满月两倍" width="170px" height="160px"></a></td>
+						<td height="160px" width="185px">
+							<h1>46P彗星来了！有望肉眼看到，视直径可能达满月两倍</h1>
+							<p>当你读到本文的时候，一颗黯淡的小彗星正朝我们靠近。它将于12月中旬到达近地点，亮度也将达到近400年来最亮。</p></td>
+					<td rowspan="4" height="160px" width="180px">
+						<dl>
+							<dt>
+							<div class="naturenews leftFloat" style="color:#333;padding:0 10px;font-weight:bold">最新内容</div>
+							<a href="/plus/list.php?tid=3" class="more indexbj rightFloat"></a>
+							</dt>
+							<dd class="padRp">
+								<a href="/a/Nature/2020/0429/29688.html"><img src="images/index-png/zuixinyanjiu-01.jpg" alt="最新内容配图" height="160px" width="180px"></a>
+							</dd>
+					</dl></td></tr>
+				</table>
+				</div>
+				
+				<div style="padding-left: 318px">
+				<table class="trOne" border="1" bgcolor=" #5985DB">
+					<div class="trTitle" align="left"><a href="aboutUs-01/201818340419-xingkongshi.html">星空史</a></div>
+					<tr><td height="160px" width="160px">
+						<a href="http://www.360doc.com/content/16/0613/06/9023871_567303743.shtml"><img src="images/index-png/xingkongshi-01.png" alt="行星撞地球" width="190" height="160"></a></td>
+						<td height="160px" width="140">
+							<h1>行星撞地球</h1>
+							<p>详细解读二十八星宿对应十二地支图</p></td>
+						<td width="160px" height="160px">
+						<a href="https://www.dogstar.net/post/404/"><img src="images/index-png/xingkongshi-02.jpg" alt="日心说图片" width="170px" height="160px"></a></td>
+						<td height="160px" width="185px">
+							<h1>关于天体运动的和地心说相对立的学说</h1>
+							<p>哥白尼提出的"日心说"，有力地打破了长期以来居于宗教统治地位的"地心说"，实现了天文学的根本变革。</p></td>
+					<td rowspan="4" width="180px" height="160px">
+						<dd>
+								<span>2020/04/29</span>
+								<a href="/a/Nature/2020/0429/29688.html">Science 一周论文导读</a>
+							</dd>
+							<dd>
+								<span>2020/04/29</span>
+								<a href="/a/Nature/2020/0429/29687.html">Nature 一周论文导读</a>
+							</dd>
+							<dd>
+								<span>2020/04/14</span>
+								<a href="/a/Nature/2020/0414/29584.html">Science 一周论文导读</a>
+							</dd>
+						</td></tr>
+					</table>
+				</div>
+				<div style="padding-left: 318px">
+				<table class="trOne" border="1" bgcolor=" #5985DB">
+					<div class="trTitle" align="left"><a href="aboutUs-01/201818340419-wenzhailu.html">文摘录</a></div>
+					<tr><td height="160px" width="160px" rowspan="2">
+						<img src="images/index-png/wenzhailu-01.jpg" alt="文摘阅读图" width="450" height="160">
+						</td>
+						<td height="160px" width="240px">
+						<p><a href="https://mp.weixin.qq.com/s/2Or0-avp4iBCyVYxUk7g2g">中国最好看的天文主题景点，都在这里了！</a></p><br>
+						<p><a href="https://mp.weixin.qq.com/s/4Ue0eDq85n0w9xBcNMZ9Qg">月亮上有水吗？土卫二上有生命吗？这个专业可以帮你找到答案</a></p><br>
+							<p><a href="http://www.astron.ac.cn/bencandy-11-909-1.htm">恒星的"生"与"死"</a></p></td>
+						<td width="185px" height="160px">
+						<dd>
+								<span>2020/04/29</span>
+								<a href="/a/Nature/2020/0429/29688.html">Science 一周论文导读</a>
+							</dd>
+							<dd>
+								<span>2020/04/29</span>
+								<a href="/a/Nature/2020/0429/29687.html">Nature 一周论文导读</a>
+							</dd>
+							<dd>
+								<span>2020/04/14</span>
+								<a href="/a/Nature/2020/0414/29584.html">Science 一周论文导读</a>
+							</dd>
+						</td>
+					</tr></table>
+				</div>
+			</section>
+			&nbsp;
+				<!--各个结构内容结束-->
+				<!--链接部分开始-->
+			<div align="center">
+				<hr  align="center" width="1000px" color="#3A7BDF" size="2px">
+				<div style="background-color:#E0E2E0;font-size: 15px;font-family: '楷体';">
+				<p align="left" style="padding-left: 250px">友情链接</p>
+				<p>
+					<a href="http://www.kepu.net.cn/gb/">中国科普博览网</a>、
+					<a href="http://www.cdstm.cn">中国数字科技馆</a>、
+					<a href="http://www.astronomy.com.cn/bbs/">牧夫天文论坛</a>、
+					<a href="http://www.uux.cn/">神秘的地球</a>、
+					<a href="http://www.uux.cn/">神秘的地球</a>、
+					<a href="http://zhidao.baidu.com/daily">百度知道日报</a>、
+					<a href="http://tech.qq.com/science.htm">腾讯科学</a>、
+					<a href="http://www.ttufo.com/">UFO探索网</a></p></div>
+			</div>
+			<!--链接部分结束-->
+			<!--页脚部分开始-->
+			<div align="center">
+		<footer>
+			<div style="background-color:#8EC9EE;font-size: 15px;font-family: '楷体';padding-bottom: 6px; padding-top: 4px;">
+				<p>寻找宇宙星空魅力</p>
+				<p>地址：##########///备案号：#########</p>
+				<p><address>问题维修联系：E-mail:2064201525@qq.com</address></p>
+			</div>
+		</footer>
+			</div>
+			&nbsp;
+			&nbsp;
+			<!--页脚部分结束-->
+	</body>
+</html>

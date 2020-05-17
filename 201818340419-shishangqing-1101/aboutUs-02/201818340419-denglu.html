@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>登陆</title>
+			<style>
+				<!--
+				.tableOne{background-color:#E8EFF2;width: 400px;height: 500px;text-align: center;}/*表格大小、颜色样式设置*/
+				.boDy{background-image: url( ../images/denglu-zhuce.jpg);background-repeat: repeat;background-attachment: fixed;width: 1000px;height: 600px;}
+				/*页面背景样式设置*/
+				-->
+			</style>
+	</head>
+
+	<body>
+		<div class="boDy">
+		<div align="center" style="padding-top: 50px">
+			<table class="tableOne" width="100px" height="100px">
+				<th><a>用户登陆</a></th><!--表格标题-->
+				<!--信息内容开始-->
+				<tr><td>
+					<input type="text" placeholder="用户名（必填）" name="userid" class="m20" id="txtUsername"><em id="_userid"></em></td><td></td></tr>
+				<tr><td>
+					<input type="password"  placeholder="密码（必填）"  id="txtPassword" name="userpwd"/></td></tr>
+				<tr><td>
+					<p><input type="text" checked="checked"  placeholder="验证码" class="yzm" name="vdcode"></p><p><img id="J_StandardCode_m" alt="验证码" src="../uploads/201818340419-1002.php" class="check-code-img" onclick="this.src=this.src+'?'"></p></td></tr>
+				<tr><td><p>
+							<input type="checkbox" name="keeptime" value="2592000" checked="">下次自动登陆
+							<input type="submit" value="登陆" class="confirm"/>
+							</p>
+				</td></tr>
+				<!--信息内容结束-->
+			</table>
+		</div>
+		</div>
+	</body>
+</html>
